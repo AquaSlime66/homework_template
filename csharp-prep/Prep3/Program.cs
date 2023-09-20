@@ -29,6 +29,8 @@ class Program
             {
                 Console.WriteLine("Your guess is right on! ");
                 sym_status = "no";
+                //unfortunately this program needs one extra loop to end, I didn't think it was worth the time to change the loop condition from the 
+                // sym status to the number and guess, but I get the general idea of it
             }
             
 
@@ -41,5 +43,5 @@ class Program
 
     }
    // hkhjjjjkjkjkjk
-   //git checkout -b branch_name (NO QUOTATIONS)
+   //git checkout -b branch_name (NO QUOTATIONS) makes a new branch from the terminal 
 }
