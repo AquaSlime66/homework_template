@@ -9,6 +9,8 @@ class Program
 
         Random randomGenerator = new Random();
         int the_holy_number = randomGenerator.Next(1, 11);
+        
+        int your_guess = 5;
 
         while (sym_status == "yes")
         {
@@ -17,11 +19,20 @@ class Program
 
             if (your_guess > the_holy_number)
             {
-
+                Console.WriteLine("Your Guess is too high. ");
             }
-
-            Console.Write("Would you like to guess again? ");
-            sym_status = Console.ReadLine();
+            else if (your_guess < the_holy_number)
+            {
+                Console.WriteLine("Your Guess is too low" );
+            }
+            else
+            {
+                Console.WriteLine("Your guess is right on! ");
+                sym_status = "no";
+                //unfortunately this program needs one extra loop to end, I didn't think it was worth the time to change the loop condition from the 
+                // sym status to the number and guess, but I get the general idea of it
+            }
+            
 
         }
 
@@ -31,4 +42,6 @@ class Program
 
 
     }
+   // hkhjjjjkjkjkjk
+   //git checkout -b branch_name (NO QUOTATIONS) makes a new branch from the terminal 
 }
