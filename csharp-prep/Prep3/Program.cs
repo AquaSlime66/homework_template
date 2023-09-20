@@ -9,6 +9,8 @@ class Program
 
         Random randomGenerator = new Random();
         int the_holy_number = randomGenerator.Next(1, 11);
+        
+        int your_guess = 5;
 
         while (sym_status == "yes")
         {
@@ -17,11 +19,18 @@ class Program
 
             if (your_guess > the_holy_number)
             {
-
+                Console.WriteLine("Your Guess is too high. ");
             }
-
-            Console.Write("Would you like to guess again? ");
-            sym_status = Console.ReadLine();
+            else if (your_guess < the_holy_number)
+            {
+                Console.WriteLine("Your Guess is too low" );
+            }
+            else
+            {
+                Console.WriteLine("Your guess is right on! ");
+                sym_status = "no";
+            }
+            
 
         }
 
@@ -31,4 +40,5 @@ class Program
 
 
     }
+   // hkhjjjjkjkjkjk
 }
